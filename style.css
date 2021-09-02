@@ -219,6 +219,7 @@ textarea::placeholder {
 .intro__inner {
     display: flex;
     align-items: center;
+    /* width: 80vw; */
 }
 
 .intro__img {
@@ -235,8 +236,7 @@ textarea::placeholder {
 }
 
 .intro__content {
-    width: 35%;
-    min-width: 520px;
+    /* width: 100%; */
     padding-top: 10px;
     padding-right: 200px;
     color: var(--clr-text-light);
@@ -878,7 +878,7 @@ textarea::placeholder {
     color: var(--clr-primary);
     font-size: 28px;
     margin-top: 10px;
-    
+
 }
 
 .contacts__inner-left-socials i {
@@ -895,6 +895,7 @@ textarea::placeholder {
 }
 
 .footer__inner {
+    padding: 0 2vw;
     margin: 0 auto 20px;
     max-width: 1032px;
     display: flex;
@@ -1003,7 +1004,7 @@ textarea::placeholder {
     }
 
     .intro__content {
-        padding: 100px;
+        padding: 40px;
         margin-top: -30px;
         color: var(--clr-text-light);
     }
@@ -1028,7 +1029,7 @@ textarea::placeholder {
     }
     .header__navbar {
         width: 100%;
-        
+
     }
 
     .nav.active {
@@ -1165,5 +1166,15 @@ textarea::placeholder {
 
     .features__item {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header__navbar {
+        min-width: 300px;
+    }
+
+    .intro__content {
+        min-width: 300px;
     }
 }
